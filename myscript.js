@@ -93,5 +93,16 @@ function borderColour () {
 btn2Name.addEventListener("click", borderColour);
 
 
+// Validate the box (do not allow black or less than 8 characters)
+// Step 1 - Grab the element to target
+let errMsg = document.querySelector("#errMsg");
+let myName2 = document.querySelector("#myName2");
+let btnSub2 = document.querySelector("btnSub2");
 
+// Step 2 = Type the function
+function validateBox (){
 
+};
+
+// Step 3 = Add an event listener to the target element call the function on the event
+btnSub2.addEventListener("click", validateBox)
