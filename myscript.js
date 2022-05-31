@@ -78,12 +78,19 @@ btnGo.addEventListener("click", changeLightsGreen);
 
 // Change textbox Border Colours
 // Step 1 - Grab the element to target
+let firstName = document.querySelector("#firstName");
+let lastName = document.querySelector("#lastName");
+let btn2Name = document.querySelector("#btn2Name");
 
 // Step 2 = Type the function
 
-
+function borderColour () {
+  firstName.style.borderColour = "blue";
+  lastName.style.borderColour = "red";
+}
 
 // Step 3 = Add an event listener to the target element call the function on the event
+btn2Name.addEventListener("click", borderColour);
 
 
 
